@@ -73,6 +73,43 @@ def train_model(model_name, params, x_train, x_valid, y_train, y_valid, train_da
 
     return model, y_valid_pred_class, accuracy, auroc
 
+# Final Train
+def final_train_model(model_name, params, x_train, y_train, train_data):
+    if model_name == "LGBM":
+        # lgb train
+        model = LGBMClassifier(**params)
+        model.fit(x_train, y_train)
+    
+    elif model_name == "FCLGBM":
+        # Focal Loss lgb train
+        model = lgb.train(params, train_data)
+        
+    elif model_name == "XGB":
+        # XGBoost train
+        model = XGBClassifier(**params)
+        model.fit(x_train, y_train)
+        
+    elif model_name == "RF":
+        # RandomForestClassifier train
+        model = RandomForestClassifier(**params)
+        model.fit(x_train, y_train)
+
+    elif model_name == "CatBoost":
+        # CatBoost train
+        model = CatBoostClassifier(**params)
+        model.fit(x_train, y_train, verbose=0)
+
+    elif model_name == "SVM":
+        # SVM train
+        model = SVC(**params)
+        model.fit(x_train, y_train)
+
+    else:
+        print("Invalid model name. (def final_train_model)")
+
+    return model
+
+
 def test(model_name, drop_colunm, model, test_df, submission_df):
     # LGBM predict
     if model_name == "LGBM":

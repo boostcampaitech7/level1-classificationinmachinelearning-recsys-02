@@ -20,6 +20,28 @@ def data_split(split_type, train_df, drop_colunm, target_colunm):
 
         x_valid = train_df[train_df.ID >= '2023-11-01'].drop(drop_colunm, axis = 1)
         y_valid = train_df[train_df.ID >= '2023-11-01'][target_colunm].astype(int)
+    
+    # random CV
+    elif split_type == "randomcv":
+        # cross validation
+        x_train = train_df.drop(drop_colunm, axis = 1)
+        y_train = train_df[target_colunm].astype(int)
+        x_train_list = []
+        y_train_list = []
+        x_valid_list = []
+        y_valid_list = []
+        from sklearn.model_selection import StratifiedKFold
+        skf = StratifiedKFold(n_splits=5, random_state=42, shuffle=True)
+        
+        for train_index, valid_index in skf.split(x_train, y_train):
+            x_train_0, x_valid_0 = x_train.iloc[train_index], x_train.iloc[valid_index]
+            x_train_list.append(x_train_0)
+            x_valid_list.append(x_valid_0)
+            y_train_0, y_valid_0 = y_train.iloc[train_index], y_train.iloc[valid_index]
+            y_train_list.append(y_train_0)
+            y_valid_list.append(y_valid_0)
+        return x_train_list, x_valid_list, y_train_list, y_valid_list    
+        
     else:
         print("Invalid model name. (Dataset Split)")
         
