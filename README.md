@@ -41,7 +41,7 @@
 </br>
 
 ## 📑Wrap-up Report
-[RecSys기초대회_RecSys_팀 리포트(02조).pdf](https://github.com/user-attachments/files/17184744/RecSys._RecSys_.02.pdf)
+[RecSys기초대회_RecSys_팀 리포트(02조).pdf](https://github.com/boostcampaitech7/level1-classificationinmachinelearning-recsys-02/blob/main/RecSys_02%20Wrap%20up%20report.pdf)
 
 
 </br>
