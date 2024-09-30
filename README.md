@@ -4,7 +4,7 @@
 
 |강현구|서동준|이도걸|이수미|최윤혜|
 |:---:|:---:|:---:|:---:|:---:|
-|<img src="https://github.com/user-attachments/assets/e1405e2b-4606-4a66-9b0c-eb7a70e941d4" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/7c03fd89-73e1-4580-aec5-46fe806b613c" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/eb46b31c-8046-49a8-8404-9292982e4582" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/e317d6b7-953a-46b1-b65d-48dc1d1075af" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/57762658-ec2c-4914-a4db-5080c105da16" width="150" height="150"/>|
+|<img src="https://github.com/user-attachments/assets/bb825700-f3e0-4d46-b67f-b6df266ecde5" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/7c03fd89-73e1-4580-aec5-46fe806b613c" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/eb46b31c-8046-49a8-8404-9292982e4582" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/e317d6b7-953a-46b1-b65d-48dc1d1075af" width="150" height="150"/>|<img src="https://github.com/user-attachments/assets/57762658-ec2c-4914-a4db-5080c105da16" width="150" height="150"/>|
 |Modeling, hyperparameter tunning|Modeling, model modularization, Train pipeline refactoring|Modeling, Modularization, hyperparameter tunning|EDA, Feature Engineering, Data Preprocessing, Modeling|EDA, Feature Engineering, Data Augmentation, Modeling|
 
 </br>
