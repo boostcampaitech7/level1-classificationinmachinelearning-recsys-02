@@ -44,3 +44,41 @@
 ## 데이터 제공
 데이터 제공: **CryptoQuant**  
 [CryptoQuant 데이터 보기](https://cryptoquant.com/ko/community/discover)
+
+## 프로젝트 구조
+```
+📦level1-classificationinmachinelearning-recsys-02
+ ┣ 📂dataloader
+ ┃ ┣ 📜dataset_load.py
+ ┃ ┣ 📜data_loader.py
+ ┃ ┗ 📜README.md
+ ┣ 📂dataset
+ ┃ ┣ 📜apply_PCA.py
+ ┃ ┣ 📜dataset_generator.py
+ ┃ ┣ 📜data_generation.ipynb
+ ┃ ┗ 📜MICE.py
+ ┣ 📂eda
+ ┃ ┣ 📜CCFplot.py
+ ┃ ┣ 📜EDA.ipynb
+ ┃ ┗ 📜README.md
+ ┣ 📂model
+ ┃ ┣ 📜binary_ensemble.py
+ ┃ ┣ 📜focal_loss_LGBM.py
+ ┃ ┣ 📜README.md
+ ┃ ┣ 📜svm.py
+ ┃ ┣ 📜tabnet.py
+ ┃ ┣ 📜train.py
+ ┃ ┗ 📜tree_model.py
+ ┣ 📂utils
+ ┃ ┣ 📜focal_loss.py
+ ┃ ┣ 📜get_acc_auroc.py
+ ┃ ┗ 📜README.md
+ ┣ 📜.gitignore
+ ┣ 📜data_generation_2.ipynb
+ ┣ 📜ensemble.ipynb
+ ┣ 📜hyperparameter_tuning.ipynb
+ ┣ 📜README.md
+ ┣ 📜train.py
+ ┗ 📜trainer.ipynb
+            
+```

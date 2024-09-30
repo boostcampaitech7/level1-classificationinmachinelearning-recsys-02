@@ -200,7 +200,7 @@ class DatasetGenerator:
 
         return df, self.category_cols, self.conti_cols
     
-    def moving_average(df, conti_cols, intervals):
+    def moving_average(self, df, conti_cols, intervals):
         """Create moving average feature"""
         df_ma_dict = [
             df[conti_col].rolling(window=interval).mean().rename(f"{conti_col}_MA{interval}")
@@ -208,10 +208,10 @@ class DatasetGenerator:
             for interval in intervals
         ]
     
-        df_ma = pd.concat([df, pd.concat(df_ma_dict, axis=1)], axis=1)
+        df_ma = pd.concat([self, df, pd.concat(df_ma_dict, axis=1)], axis=1)
         return df_ma
     
-    def shift_feature(df, conti_cols, intervals) -> List[pd.Series]:
+    def shift_feature(self, df, conti_cols, intervals) -> List[pd.Series]:
         """Create shift feature"""
         df_shift_dict = [
             df[conti_col].shift(interval).rename(f"{conti_col}_{interval}")
