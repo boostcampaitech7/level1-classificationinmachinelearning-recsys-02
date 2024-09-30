@@ -208,7 +208,7 @@ class DatasetGenerator:
             for interval in intervals
         ]
     
-        df_ma = pd.concat([self, df, pd.concat(df_ma_dict, axis=1)], axis=1)
+        df_ma = pd.concat([df, pd.concat(df_ma_dict, axis=1)], axis=1)
         return df_ma
     
     def shift_feature(self, df, conti_cols, intervals) -> List[pd.Series]:
