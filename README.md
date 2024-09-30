@@ -33,10 +33,10 @@
 
 ## ⭐Project Summary
 - EDA: EDA를 통해 유의한 변수 파악 및 파생변수 생성
-- 데이터 전처리 : pca, 변수 로그변환, MICE 결측치 처리, 변수 선택 등을 통한 데이터 정리
-- 다양한 모델 실험: RandomForest, XGBoost, CatBoost, LGBM, tabnet, autoML 등 
+- Preprocessing : pca, 변수 로그변환, MICE 결측치 처리, 변수 선택 등을 통한 데이터 정리
+- Modeling: RandomForest, XGBoost, CatBoost, LGBM, tabnet, autoML 등 
 - Ensemble : soft / hard voting을 통한 다양한 모델 앙상블 시도
-- hyper parameter tuning : bayes optimization을 통한 파라미터 튜닝
+- Hyper-parameter tuning : bayes optimization을 통한 파라미터 튜닝
 
 </br>
 
